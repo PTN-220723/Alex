@@ -1,1 +1,1 @@
-print('So long way to connect local and Git Hub\'s repositories!!!')
+print('So long way to connect local and Git Hub\'s repositories!!! Uhhh!!!')
