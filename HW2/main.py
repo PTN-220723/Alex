@@ -43,8 +43,8 @@ print(f'{num1} + {num2} = {num1 + num2}')
 print(f'{num1} - {num2} = {num1 - num2}')
 print(f'{num1} * {num2} = {num1 * num2}')
 print(f'{num1} / {num2} = {num1 / num2}')
-print(f'{num1} ** {num2} = {num1 ** num2}')
-print('\n')
+print(f'{num1} ** {num2} = {num1 ** num2}\n')
+
 
 # Урок № 2 Задание № 3
 #3) Воспользуйтесь различными методами строк
@@ -72,14 +72,14 @@ print(string1)
 string2 = string2.split(' ')
 print(string2[1] + ' ' + string2[3])
 string3 = string3[::2]
-print(string3)
+print(string3, '\n')
 
 # Урок № 2 Задание № 5
 # 5) С помощью метода строк Замените слово show на display и создайте другую переменную
 
 show = 'show ip interface brief'
 display = show.replace('show', 'display')
-print(display)
+print(display, '\n')
 
 # Урок № 2 Задание № 6
 # 6) ** В купейном вагоне имеется 9 купе с четырьмя местами для пассажиров в каждом. Напишите программу,
