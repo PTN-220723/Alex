@@ -20,10 +20,17 @@ summ = num1 + num2
 # else:
 #    print(summ - 2)
 
-print(summ + 1) if summ % 5 == 0 else (summ - 2)
+print(summ + 1) if summ % 5 == 0 else print(summ - 2)
 
 #3) Ввести 2 числа. Если их произведение отрицательно, умножить его на 8 и вывести на экран,
 # в противном случае увеличить его в 1,5 раза и вывести на экран.
 nm1 = int(input('Введите первое число: '))
 nm2 = int(input('Введите второе число: '))
 mult = nm1 * nm2
+
+# if mult < 0:
+#     print(mult * 8)
+# else:
+#     print(mult * 1.5)
+
+print(mult * 8) if mult < 0 else print(mult * 1.5)
