@@ -98,6 +98,45 @@ elif age <= 59:
 elif age < 110:
     print('Вы пенсионер')
 else:
-    print('')
+    print('Неверный возраст')
 
+# 8) Напишите программу, которая принимает целое число от 1 до 12 и
+# возвращает название месяца и количество дней.
+mnth = int(input('Введите порядковый номер месяца: '))
 
+if mnth == 1:
+    print('Январь 31 день')
+elif mnth == 2:
+    print('Февраль 28 дней')
+elif mnth == 3:
+    print('Март 31 день')
+elif mnth == 4:
+    print('Апрель 30 дней')
+elif mnth == 5:
+    print('Май 31 день')
+elif mnth == 6:
+    print('Июнь 30 дней')
+elif mnth == 7:
+    print('Июль 31 день')
+elif mnth == 8:
+    print('Август 31 день')
+elif mnth == 9:
+    print('Сентябрь 30 дней')
+elif mnth == 10:
+    print('Октябрь 31 день')
+elif mnth == 11:
+    print('Ноябрь 30 дней')
+elif mnth == 12:
+    print('Декабрь 31 день')
+else:
+    print('Неверный номер')
+# from datetime import datetime
+#
+# month = datetime.now().month
+# print(month)
+# day = datetime.now().day
+# print(day)
+# d = datetime.now().strftime('%D')
+# print(d)
+# m = datetime.ctime()
+# print(m)
