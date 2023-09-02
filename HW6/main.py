@@ -50,11 +50,12 @@ print('Список чисел: ', list_numbs)
 print(('-' * 10), ' Задание № 4', ('-' * 10))
 str = input('Введите пример со сложением: ')
 list_numbs = str.split(' + ')
-list_digits = []
+#list_digits = []
 sum = 0
-for num in list_numbs:
-    if num.isdigit():
-        list_digits.append(int(num))
+# for num in list_numbs:
+#     if num.isdigit():
+#         list_digits.append(int(num))
+list_digits = [int(num) for num in list_numbs]
 #list_digits = [list_digits.append(int(num)) for num in list_numbs if num.isdigit()]
 
 for i in list_digits:
