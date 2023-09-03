@@ -55,7 +55,7 @@ sum = 0
 # for num in list_numbs:
 #     if num.isdigit():
 #         list_digits.append(int(num))
-list_digits = [int(num) for num in list_numbs]
+list_digits = [int(num) for num in list_numbs if num.isdigit()]
 #list_digits = [list_digits.append(int(num)) for num in list_numbs if num.isdigit()]
 
 for i in list_digits:
