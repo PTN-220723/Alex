@@ -147,7 +147,7 @@ numbers = [386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 
 #numbers1 = [numbers1.append(i) for i in numbers if i % 2 == 0 and i != 815]
 numbers1 = []
 for i in numbers:
-    if i % 2 == 0 and i != 815:
+    if i % 2 == 0:
         numbers1.append(i)
     elif i == 815:
         break
