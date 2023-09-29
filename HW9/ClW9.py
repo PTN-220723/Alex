@@ -30,12 +30,12 @@
 #     print(line)         # вывод познаково
 # files.close()
 #####################################################
-files = open('files/byron.txt', 'r', encoding='UTF-8')
-for lines in files:
-    #    print(lines)            # вывод построчно str
-    print(lines.rstrip())  # вывод построчно с удалением пробелов справа
-#    print(lines.split())    # вывод построчно списком
-files.close()
+# files = open('files/byron.txt', 'r', encoding='UTF-8')
+# for lines in files:
+#     #    print(lines)            # вывод построчно str
+#     print(lines.rstrip())  # вывод построчно с удалением пробелов справа
+# #    print(lines.split())    # вывод построчно списком
+# files.close()
 ######################################################
 ############# Запись в файл ##############
 # file = open('test.txt', mode='w')       # w перезаписывает файл
@@ -102,5 +102,95 @@ files.close()
 #         new_file = open(f'files/nature_copy{1}.jpg', mode='wb')
 #         new_file.write(context)
 #         new_file.close()
+#######################################
+### Функции
+##################################
+# def my_divmod(a, b):
+#     return (a // b, a % b)
+#
+#
+# my_number = my_divmod(10, 3)
+# print(my_number)
+###########################
+# def max_number(num1, num2):
+#     print(f'Глобальные переменные {a} и {b}')
+#     print(f'Локальные переменные {num1} и {num2}')
+#     if num1 > num2:
+#         return num1
+#     elif num2 > num1:
+#         return num2
+#     else:
+#         return 'Числа равны'
+#     print('Конец функции')          # После return ничего не распечатывается
+#
+# a = 12
+# b = 33
+# result = max_number(a, b)
+# print(result)
+###################################
+# def my_calc(a, b, action):
+#     if action == '+':
+#         return a + b
+#     elif action == '-':
+#         return a - b
+#     elif action == '*':
+#         return a * b
+#     elif action == '/':
+#         return a / b
+#
+#
+# result1 = my_calc(50, 60, '+')
+# result2 = my_calc(50, 60, '-')
+# result3 = my_calc(50, 60, '*')
+# result4 = my_calc(50, 60, '/')
+# print(result1)
+# print(result2)
+# print(result3)
+# print(result4)
+#######################################
+# def my_calc(a, b, action='+', verbose=False):   #  verbose=... это параметр с ключем
+#     if verbose:
+#         return f'{a} + {b} = {a + b}'
+#     else:
+#         if action == '+':
+#             return a + b
+# result1 = my_calc(50, 60, verbose=True)         #  verbose=... это аргумент с ключем - ключевой аргумент
+# print(result1)
+#############################################
+##### Очень хорошая проверка типа входной переменной ###############
+# def check_param(age):
+#     if isinstance(age, str) and age.isdigit():
+#         return int(age)
+#     elif isinstance(age, int):
+#         return age
+#     else:
+#         print('Вы введли не числовое значение, значение по умолчанию 18 лет')
+#         return 18
+#
+#
+# def my_age(age=10):
+#     age = check_param(age)
+#     if 0 < age <= 18:
+#         print('Вам нужно учиться')
+#     elif 18 < age <= 50:
+#         print('Вам нужно работать')
+#     elif 50 < age <= 59:
+#         print('Вам скоро на пенсию')
+#     elif 60 < age <= 110:
+#         print('Вы пенсионер')
+#     else:
+#         print('Вы сказочник')
+#
+#
+# my_age(-5)
+##############################
+list1 = [1, 2, 3, 4, 5, 6]
+def from_int_to_str(list1):
+    return [str(i) for i in list1]
+
+
+list2 = from_int_to_str(list1)
+print(list1)
+print(list2)
 
 
